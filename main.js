@@ -8,7 +8,7 @@ if (typeof urlextract === 'undefined'){
 				urlextract.confr.scrolling = 'no';
 				urlextract.confr.style.cssText =
 				'border:none;position:fixed;top:0;left:0;z-index:99999;box-sizing:border-box;width:100%;border-bottom:solid 1px #000;box-shadow:0 2px 4px rgba(0,0,0,.3);overflow:hidden;';
-				document.body.appendChild(confr);
+				document.body.appendChild(urlextract.confr);
 				var doc = urlextract.confr.contentWindow.document;
 				doc.open();
 				doc.write('<!DOCTYPE html><head>'
