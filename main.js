@@ -1,6 +1,6 @@
 if (typeof urlextract === 'undefined'){
 	var urlextract = {
-		confr: document.getElementById('URIExtractorIFrame');,
+		confr: document.getElementById('URIExtractorIFrame'),
 		init: function(){
 			if (confr == null){
 				confr = document.createElement('IFRAME');
