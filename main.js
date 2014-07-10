@@ -2,14 +2,14 @@ if (typeof urlextract === 'undefined'){
 	var urlextract = {
 		confr: document.getElementById('URIExtractorIFrame'),
 		init: function(){
-			if (confr == null){
-				confr = document.createElement('IFRAME');
-				confr.setAttribute('id','URIExtractorIFrame');
-				confr.scrolling = 'no';
-				confr.style.cssText =
+			if (urlextract.confr == null){
+				urlextract.confr = document.createElement('IFRAME');
+				urlextract.confr.setAttribute('id','URIExtractorIFrame');
+				urlextract.confr.scrolling = 'no';
+				urlextract.confr.style.cssText =
 				'border:none;position:fixed;top:0;left:0;z-index:99999;box-sizing:border-box;width:100%;border-bottom:solid 1px #000;box-shadow:0 2px 4px rgba(0,0,0,.3);overflow:hidden;';
 				document.body.appendChild(confr);
-				var doc = confr.contentWindow.document;
+				var doc = urlextract.confr.contentWindow.document;
 				doc.open();
 				doc.write('<!DOCTYPE html><head>'
 					+ '<style>'
@@ -27,11 +27,11 @@ if (typeof urlextract === 'undefined'){
 					+ '</div>'
 					+ '</body></html>');
 				doc.close();
-				collectAnchors(confr);
+				collectAnchors(urlextract.confr);
 			}
 		},
 		toggle: function(){
-			confr.style.display = "none" == confr.style.display ? "" : "none";
+			urlextract.confr.style.display = "none" == urlextract.confr.style.display ? "" : "none";
 		}
 	}
 } else {
