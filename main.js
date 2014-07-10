@@ -34,6 +34,7 @@ if (typeof urlextract === 'undefined'){
 			urlextract.confr.style.display = "none" == urlextract.confr.style.display ? "" : "none";
 		}
 	}
+	urlextract.init();
 } else {
 	urlextract.toggle();
 }
