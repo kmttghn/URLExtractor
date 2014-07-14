@@ -13,7 +13,7 @@ if (typeof urlextract === 'undefined'){
 				doc.open();
 				doc.write('<!DOCTYPE html><head>'
 					+ '<style>'
-					+ 'html,body{height:100%;margin:0} body{padding:0 .5rem;line-height:1.2rem;color:#fff;background-color:rgba(0,0,0,.75);} div{width:100%} .textBox{display:block;box-sizing:border-box;width:100%;border:solid 1px #999;background:transparent;color:inherit;padding:0 .5rem} .output{height:80px;resize:vertical;overflow-y:scroll}'
+					+ 'html,body{height:100%;margin:0} body{padding:0 .5rem;line-height:1.2;color:#fff;background-color:rgba(0,0,0,.75);} div{width:100%} .textBox{display:block;box-sizing:border-box;width:100%;border:solid 1px #999;background:transparent;color:inherit;padding:0 .5rem;font-family:monospace;} .output{height:80px;resize:vertical;overflow-y:scroll}'
 					+ '</style>'
 					+ '</head>'
 					+ '<body>'
